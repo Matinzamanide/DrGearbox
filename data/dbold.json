@@ -1,0 +1,211 @@
+{
+  
+  "categories": [
+    { "id": 1, "name": "گیربکس", "parentId": null },
+    { "id": 2, "name": "الکتروموتور", "parentId": null },
+    
+    { "id": 101, "name": "گیربکس حلزونی", "parentId": 1 },
+    { "id": 102, "name": "گیربکس خورشیدی", "parentId": 1 },
+    { "id": 103, "name": "گیربکس هلیکال", "parentId": 1 },
+    { "id": 104, "name": "گیربکس قورباغه ای", "parentId": 1 }
+  ],
+  "products": [
+    {
+      "id": 1001,
+      "title": "گیربکس حلزونی سری NMRV",
+      "price": 2500000,
+      "before_discount_price":"",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"NMRV",
+      "inventory":"1",
+      "categoryId": 101, 
+      "description":"",
+      "catalog":"",
+      "image":["https://drgearbox.com/wp-content/uploads/2026/03/Cubic-NMRV-Series-1.png"],
+      "features": ["بدنه آلومینیوم"]
+    },
+    {
+      "id": 1002,
+      "title": "گیربکس حلزونی SEW سایز 63",
+      "price":0,
+      "before_discount_price":"",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "sahand",
+      "type":"SEW",
+      "inventory":"0",
+      "categoryId": 101, 
+      "description":"",
+      "catalog":"",
+      "image":["https://shahbazmotor.com/wp-content/uploads/2018/04/sew-Worm-gearbox-shahbazmotor.com_-300x300.webp"],
+      "features": ["شفت فولادی"]
+    },
+    {
+      "id": 1003,
+      "title": "گیربکس خورشیدی مدل P",
+      "price": 8500000,
+      "before_discount_price":"",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"",
+      "inventory":"2",
+      "categoryId": 102, 
+      "description":"",
+      "catalog":"",
+      "image":[""],
+      "features": ["گشتاور بالا"]
+    },
+    {
+        "id":1004,
+        "title": "گیربکس مکعبی NMRV series",
+      "price":7600000 ,
+      "before_discount_price":7700000,
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"NMRV",
+      "inventory":"2",
+      "categoryId": 101, 
+      "description":"",
+      "catalog":"",
+      "image":["https://drgearbox.com/wp-content/uploads/2026/03/Cubic-NMRV-Series-1.png"],
+      "features": [""]
+
+    },
+    {
+        "id":1005,
+        "title": "گیربکس مکعبی مرکب NMRV Series",
+      "price":7900000 ,
+      "before_discount_price":8000000,
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"NMRV",
+      "inventory":"2",
+      "categoryId": 101, 
+      "description":"",
+      "catalog":"",
+      "image":["https://drgearbox.com/wp-content/uploads/2026/03/gearbox-NMRV-Series-2.png"],
+      "features": [""]
+
+    },
+    {
+        "id":1006,
+        "title": "گیربکس قورباغه ای روسی یدک pm350",
+      "price":50000000 ,
+      "before_discount_price":"60000000",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"قورباغه ای",
+      "inventory":"2",
+      "categoryId": 104, 
+      "description":"در صورت نیاز به مشاوره برای خرید محصول و یا انتخاب الکتروموتور متناسب با محصول مورد نظر، می‌توانید از طریق راه‌های ارتباطی مندرج در سایت، با مشاوران فروش مجموعه شهبازموتور در ارتباط باشید.",
+      "catalog":"",
+      "image":["/bg.png"],
+      "features": [""]
+
+    },
+    {
+        "id":1007,
+        "title": "گیربکس چند محور ایلماز",
+      "price":20500000 ,
+      "before_discount_price":"33000000",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "ایلماز",
+      "type":"چند محور",
+      "inventory":"2",
+      "categoryId":104, 
+      "description":"در صورت نیاز به مشاوره برای خرید گیربکس چند محور ایلماز و یا انتخاب الکتروموتور متناسب با آن، می‌توانید درخواست خود را در سایت ثبت نموده یا با کارشناسان ما تماس بگیرید.",
+      "catalog":"",
+      "image":["https://shahbazmotor.com/wp-content/uploads/2023/12/Yilmaz-heavy-duty-gearbox-H-series-shabazmotor.com_.webp"],
+      "features": [""]
+
+    },
+    {
+        "id":1008,
+        "title": "گیربکس پارس گرجی بول هلیکال سری K77",
+      "price":20000000 ,
+      "before_discount_price":"30000000",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "پارس گرجی",
+      "type":"بول هلیکال",
+      "inventory":"0",
+      "categoryId": 104, 
+      "description":"",
+      "catalog":"",
+      "image":["https://www.kalasanati.com/images/farashop/products/www.kalasanati.com_parsgorji_gearbox_bevel_218476994.webp"],
+      "features": [""]
+
+    },
+    {
+        "id":1006,
+        "title": "",
+      "price":1 ,
+      "before_discount_price":"",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"",
+      "inventory":"2",
+      "categoryId": 1, 
+      "description":"",
+      "catalog":"",
+      "image":[""],
+      "features": [""]
+
+    },
+    {
+        "id":1006,
+        "title": "",
+      "price":1 ,
+      "before_discount_price":"",
+      "ratios": [
+    { "ratio": "1:10", "price": 7600000, "before_price": 7700000 },
+    { "ratio": "1:20", "price": 8200000, "before_price": 8500000 },
+    { "ratio": "1:30", "price": 8900000 }
+  ],
+      "brand": "Dr Gearbox",
+      "type":"",
+      "inventory":"2",
+      "categoryId": 1, 
+      "description":"",
+      "catalog":"",
+      "image":[""],
+      "features": [""]
+
+    }
+  ]
+}

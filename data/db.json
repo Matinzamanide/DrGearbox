@@ -1,0 +1,352 @@
+{
+  "categories": [
+    { "id": 1, "name": "گیربکس", "parentId": null },
+    { "id": 2, "name": "الکتروموتور", "parentId": null },
+    { "id": 101, "name": "گیربکس حلزونی", "parentId": 1 },
+    { "id": 102, "name": "گیربکس خورشیدی", "parentId": 1 },
+    { "id": 103, "name": "گیربکس هلیکال", "parentId": 1 }, 
+    { "id": 104, "name": "گیربکس جناغی]", "parentId": 1 } 
+   ],
+  "products": [
+    {
+      "id": 1001,
+      "title": "گیربکس حلزونی سری NMRV1",
+      "base_price": 7600000,
+      "before_discount_price": 7700000,
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier":  0},
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "Dr Gearbox",
+      "type": "NMRV",
+      "inventory": 1,
+      "categoryId": 101,
+      "description": "",
+      "catalog": "",
+      "image": ["https://drgearbox.com/wp-content/uploads/2026/03/Cubic-NMRV-Series-1.png","https://shahbazmotor.com/wp-content/uploads/2018/04/sew-Worm-gearbox-shahbazmotor.com_-300x300.webp"],
+      "features": ["بدنه آلومینیوم"]
+    },
+    {
+      "id": 1002,
+      "title": "گیربکس حلزونی SEW سایز 63",
+      "base_price": 7600000,
+      "before_discount_price": 7700000,
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "sahand",
+      "type": "SEW",
+      "inventory": 0,
+      "categoryId": 101,
+      "description": "",
+      "catalog": "",
+      "image": ["https://shahbazmotor.com/wp-content/uploads/2018/04/sew-Worm-gearbox-shahbazmotor.com_-300x300.webp"],
+      "features": ["شفت فولادی"]
+    },
+    {
+      "id": 1003,
+      "title": "گیربکس خورشیدی مدل P",
+      "base_price": 7600000,
+      "before_discount_price": 7700000,
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "Dr Gearbox",
+      "type": "",
+      "inventory": 2,
+      "categoryId": 102,
+      "description": "",
+      "catalog": "",
+      "image": [""],
+      "features": ["گشتاور بالا"]
+    },
+    {
+      "id": 1004,
+      "title": "گیربکس مکعبی NMRV series",
+      "base_price": 7600000,
+      "before_discount_price": 7700000,
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "Dr Gearbox",
+      "type": "NMRV",
+      "inventory": 2,
+      "categoryId": 101,
+      "description": "",
+      "catalog": "",
+      "image": ["https://drgearbox.com/wp-content/uploads/2026/03/Cubic-NMRV-Series-1.png"],
+      "features": [""]
+    },
+    {
+      "id": 1005,
+      "title": "گیربکس مکعبی مرکب NMRV Series",
+      "base_price": 7600000,
+      "before_discount_price": 8000000,
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "Dr Gearbox",
+      "type": "NMRV",
+      "inventory": 2,
+      "categoryId": 101,
+      "description": "",
+      "catalog": "",
+      "image": ["https://drgearbox.com/wp-content/uploads/2026/03/gearbox-NMRV-Series-2.png"],
+      "features": [""]
+    },
+    {
+      "id": 1006,
+      "title": "گیربکس قورباغه ای روسی یدک pm350",
+      "base_price": 50000000,
+      "before_discount_price": "60000000",
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "Dr Gearbox",
+      "type": "قورباغه ای",
+      "inventory": 2,
+      "categoryId": 103,
+      "description": "در صورت نیاز به مشاوره برای خرید محصول و یا انتخاب الکتروموتور متناسب با محصول مورد نظر، می‌توانید از طریق راه‌های ارتباطی مندرج در سایت، با مشاوران فروش مجموعه شهبازموتور در ارتباط باشید.",
+      "catalog": "",
+      "image": ["/bg.png"],
+      "features": [""]
+    },
+    {
+      "id": 1007,
+      "title": "گیربکس چند محور ایلماز",
+      "base_price": 20500000,
+      "before_discount_price": "33000000",
+      "options": [
+        {
+          "id": "ratio",
+          "name": "نسبت تبدیل",
+          "is_required": true,
+          "choices": [
+            { "value": "1:10", "price_modifier": 0 },
+            { "value": "1:20", "price_modifier": 0 },
+            { "value": "1:30", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "جنس بدنه",
+          "is_required": true,
+          "choices": [
+            { "value": "آلومینیوم (استاندارد)", "price_modifier": 0 },
+            { "value": "چدن (سفارشی)", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "ایلماز",
+      "type": "چند محور",
+      "inventory": 2,
+      "categoryId": 103,
+      "description": "در صورت نیاز به مشاوره برای خرید گیربکس چند محور ایلماز و یا انتخاب الکتروموتور متناسب با آن، می‌توانید درخواست خود را در سایت ثبت نموده یا با کارشناسان ما تماس بگیرید.",
+      "catalog": "",
+      "image": ["https://shahbazmotor.com/wp-content/uploads/2023/12/Yilmaz-heavy-duty-gearbox-H-series-shabazmotor.com_.webp"],
+      "features": [""]
+    },
+    {
+      "id": 1008,
+      "title": "گیربکس پارس گرجی بول هلیکال سری K77",
+      "base_price": 20000000,
+      "before_discount_price": "30000000",
+      "options": [
+        {
+          "id": "out-type",
+          "name": "انتخاب نوع خروجی:",
+          "is_required": true,
+          "choices": [
+            { "value": "شافت دار", "price_modifier": 0 },
+            { "value": "هالو شافت", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "nahve-nasb",
+          "name": "انتخاب نحوه نصب (IM)",
+          "is_required": true,
+          "choices": [
+            { "value": "پایه دار", "price_modifier": 0 },
+            { "value": "فلنچ دار", "price_modifier": 1500000 }
+          ]
+        }
+      ],
+      "brand": "پارس گرجی",
+      "type": "K77",
+      "inventory": 5,
+      "categoryId": 103,
+      "description": "توضیحات محصول پارس گرجی",
+      "catalog": "",
+      "image": ["https://www.kalasanati.com/images/farashop/products/www.kalasanati.com_parsgorji_gearbox_bevel_218476994.webp"],
+      "features": [""]
+    },
+    {
+      "id": 1009,
+      "title": "گیربکس خورشیدی رجیانا Reggiana تیپ 105",
+      "base_price": 80000000,
+      "before_discount_price": "90000000",
+      "options": [
+        {
+          "id": "out-type",
+          "name": "انتخاب نوع خروجی گیربکس خورشیدی:",
+          "is_required": true,
+          "choices": [
+            { "value": "MC (فلنج دار با شافت خروجی تک خار)", "price_modifier": 0 },
+            { "value": "FS(فلنج دار با خروجی هزار خاری مادگی)", "price_modifier": 0 },
+            { "value": "UC(پایه دار با شافت خروجی تک خار )", "price_modifier": 0 }
+          ]
+        },
+        {
+          "id": "Etage-erzahlung",
+          "name": "انتخاب تعداد طبقه :",
+          "is_required": true,
+          "choices": [
+            { "value": "1 استیج (نسبت تبدیل : 1 تا 7 )", "price_modifier": 0 },
+            { "value": "2 استیج (نسبت تبدیل : 10 الی 50)", "price_modifier": 1500000 },
+            { "value": "3 استیج (نسبت تبدیل : 50 الی 300)", "price_modifier": 1500000 }
+          ]
+        },
+        {
+          "id": "frame-size",
+          "name": "انتخاب سایز فریم الکتروموتور :",
+          "is_required": true,
+          "choices": [
+            { "value": "80", "price_modifier": 0 },
+            { "value": "90", "price_modifier": 0 },
+            { "value": "100", "price_modifier": 0 },
+            { "value": "132", "price_modifier": 0 }
+          ]
+        }
+      ],
+      "brand": "رجیانا",
+      "type": "تیپ 105",
+      "inventory": 5,
+      "categoryId": 102,
+      "description": "توضیحات محصول گیربکس خورشیدی رجیانا Reggiana تیپ 105 ",
+      "catalog": "",
+      "image": ["https://www.kalasanati.com/images/farashop/gallery/www.kalasanati.com_solar_gearbox_regiana_uc_2126800242.webp"],
+      "features": [""]
+    },
+    {
+      "id": 1010,
+      "title": "گیربکس دنده جناغی تقسیم کننده Divider Gearbox",
+      "base_price": 20000000,
+      "before_discount_price": "30000000",
+      "brand": "دکتر گیربکس",
+      "type": "",
+      "inventory": 0,
+      "categoryId": 104,
+      "description": "گیربکس دیوایدر باکس (Divider Gearbox) به عنوان هسته مرکزی سیستم‌های انتقال قدرت در خطوط نورد طراحی شده است. این محصول با قابلیت تقسیم توان یکنواخت از یک منبع ورودی به دو خروجی هم‌محور یا غیر هم‌محور، امکان همزمانی حرکت و توزیع گشتاور یکسان در دو مسیر را فراهم می‌کند. این…",
+      "catalog": "",
+      "image": ["https://drgearbox.com/wp-content/uploads/2025/10/DADKHAH.jpg","https://drgearbox.com/wp-content/uploads/2025/10/0_8-9.jpg"],
+      "features": [""]
+    }
+  ]
+}

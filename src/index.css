@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css - اضافه کن به انتهای فایل */
+
+@font-face {
+  font-family: bahnschrift;
+  src: url("../public/fonts/bahnschrift.ttf");
+}
+@font-face {
+  font-family: bank;
+  src: url("../public/fonts/BankGothic\ Bold.ttf");
+}
+@font-face {
+  font-family: vaziri;
+  src: url("../public/PeydaFaNumWeb-SemiBold.woff");
+}
+*{
+  font-family: vaziri,sans-serif;
+}
+.cursive{
+  font-family: bank;
+}
+.fantasy{
+  font-family: bahnschrift;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIframe {
+    from {
+      transform: rotate3d(0deg)
+    }
+    to {
+      transform: rotate3d(360deg);
+    }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+
+/* src/index.css - اضافه کن به انتهای فایل */
+
+/* انیمیشن گرادیانت متحرک */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+.animate-gradient-fast {
+  background-size: 200% 200%;
+  animation: gradient 1.5s ease infinite;
+}
+
+/* انیمیشن چرخش آهسته */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* انیمیشن fade in up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+
+
+ body {
+    direction: rtl;
+    font-family: 'IRANSans', system-ui, sans-serif;
+  }
+
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+}
