@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
-  Mail, ArrowLeft, Send, Shield, CheckCircle, AlertCircle,
-  Settings, Lock, Key, UserCheck, Phone, MessageSquare,
+   ArrowLeft, Shield, CheckCircle, AlertCircle,
+   Lock, Key, Phone, MessageSquare,
   Smartphone, Fingerprint,
   EyeOff,
   Eye

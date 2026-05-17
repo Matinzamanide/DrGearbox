@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { X, Printer, Eye, Download } from "lucide-react";
+import { X, Printer } from "lucide-react";
 import axios from "axios";
 
 interface InvoiceProps {
@@ -12,7 +12,7 @@ const Invoice: React.FC<InvoiceProps> = ({ order, user, onClose }) => {
   const invoiceRef = useRef<HTMLDivElement>(null);
   const [address, setAddress] = useState<any>(null);
   const [addressLoading, setAddressLoading] = useState(true);
-  const [viewMode, setViewMode] = useState<"preview" | "print">("preview");
+  // const [viewMode, setViewMode] = useState<"preview" | "print">("preview");
 
   useEffect(() => {
     const fetchAddress = async () => {
@@ -425,11 +425,6 @@ const Invoice: React.FC<InvoiceProps> = ({ order, user, onClose }) => {
   const calculateSubtotal = () => {
     return order.items.reduce((sum:any, item:any) => sum + (item.price * item.quantity), 0);
   };
-
-  const calculateTax = () => {
-    return calculateSubtotal() * 0.09;
-  };
-
   const renderSelectedOptions = (selectedOptions: string) => {
     if (!selectedOptions || selectedOptions === "[]" || selectedOptions === "{}") {
       return null;

@@ -1,10 +1,10 @@
 // components/admin/OrdersManager.tsx
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { 
-  Package, Eye, Search, Filter, ChevronLeft, ChevronRight,
+  Package, Eye, Search, ChevronLeft, ChevronRight,
   CheckCircle, Truck, Clock, CreditCard, AlertCircle, X,
-  Printer, Download, RefreshCw, Calendar, User, Phone, MapPin,
-  DollarSign, Settings, ShoppingBag, MessageSquare
+ RefreshCw,  User, Phone, MapPin,
+  DollarSign, Settings, MessageSquare
 } from "lucide-react";
 import axios from "axios";
 

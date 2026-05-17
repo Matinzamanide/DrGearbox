@@ -1415,7 +1415,6 @@ const [invoiceOrder, setInvoiceOrder] = useState<Order | null>(null);
       </div>
     );
   }
-  const testnumber=123456;
   if (!user) return null;
 
   const orderStats = {

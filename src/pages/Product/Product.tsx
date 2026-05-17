@@ -1011,7 +1011,7 @@ import {
   ShoppingCart, Heart, Share2, Award, ChevronLeft, 
   FileText, Ruler, CheckCircle, AlertCircle, 
   Package, Sparkles, Settings, Tag, Shield, Truck, Clock, Zap,
-  Phone, MessageCircle, Headphones, Mail, MapPin, Download, 
+  Phone, MessageCircle, Headphones, Mail, Download, 
   Link2, Check, Plus, Minus, Star, RotateCw
 } from "lucide-react";
 import { useShoppingCart } from "../../context/ShoppingCartContext";

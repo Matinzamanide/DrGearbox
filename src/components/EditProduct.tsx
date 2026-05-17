@@ -3,11 +3,10 @@ import { useState, useCallback, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { 
-  Package, Upload, X, Plus, Trash2, 
+   Upload, X, Plus, Trash2, 
   Image as ImageIcon, FileText, Settings, 
   CheckCircle, AlertCircle, Loader2, 
-  ChevronLeft, DollarSign, 
-  ShoppingBag, Database, Layers, Sparkles, Link as LinkIcon,
+  ChevronLeft, DollarSign, Database, Sparkles, Link as LinkIcon,
   Ruler, Gauge, Weight, Zap, Thermometer, Wind, Percent,
   Edit, RefreshCw, Clock, Calendar
 } from "lucide-react";

@@ -27,10 +27,7 @@ const ElectroMotor = () => {
   const [loading, setLoading] = useState(true);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [priceRange, setPriceRange] = useState({ min: 0, max: 100000000 });
-  const [categories, setCategories] = useState<ICategory[]>([]);
-  const [selectedMainCategory, setSelectedMainCategory] = useState<string>("");
-  const [selectedSubCategory, setSelectedSubCategory] = useState<string>("");
-  
+  const [categories, setCategories] = useState<ICategory[]>([]);  
   const [filters, setFilters] = useState<FilterState>({
     brand: "",
     category: "",

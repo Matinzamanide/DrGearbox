@@ -1,33 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* src/index.css - اضافه کن به انتهای فایل */
 
+/* --- فونت‌ها (اصلاح آدرس‌ها بدون کلمه public) --- */
 @font-face {
-  font-family: bahnschrift;
-  src: url("../public/fonts/bahnschrift.ttf");
-}
-@font-face {
-  font-family: bank;
-  src: url("../public/fonts/BankGothic\ Bold.ttf");
+  font-family: 'bahnschrift';
+  src: url("/fonts/bahnschrift.ttf") format("truetype");
 }
 @font-face {
-  font-family: vaziri;
-  src: url("../public/PeydaFaNumWeb-SemiBold.woff");
+  font-family: 'bank';
+  src: url("/fonts/BankGothic-Bold.ttf") format("truetype"); /* فاصله در نام فایل اصلاح شد */
 }
-*{
-  font-family: vaziri,sans-serif;
+@font-face {
+  font-family: 'vaziri';
+  src: url("/PeydaFaNumWeb-SemiBold.woff") format("woff"); /* اگر این فایل هم در ریشه public است */
 }
-.cursive{
-  font-family: bank;
+
+/* --- استایل‌های عمومی --- */
+* {
+  font-family: 'vaziri', sans-serif;
 }
-.fantasy{
-  font-family: bahnschrift;
+
+body {
+  direction: rtl;
+  font-family: 'vaziri', system-ui, sans-serif; /* هماهنگ‌سازی با فونت اصلی پروژه شما */
 }
+
+.cursive {
+  font-family: 'bank', sans-serif;
+}
+
+.fantasy {
+  font-family: 'bahnschrift', sans-serif;
+}
+
+/* --- انیمیشن‌ها --- */
+
+/* انیمیشن لود شدن رو به بالا */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -36,42 +49,30 @@
 }
 
 @keyframes rotateIframe {
-    from {
-      transform: rotate3d(0deg)
-    }
-    to {
-      transform: rotate3d(360deg);
-    }
+  from {
+    transform: rotate3d(0deg);
+  }
+  to {
+    transform: rotate3d(360deg);
+  }
 }
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
-}
-
-.animation-delay-100 {
-  animation-delay: 0.1s;
-}
-
-.animation-delay-200 {
-  animation-delay: 0.2s;
-}
-
-.animation-delay-300 {
-  animation-delay: 0.3s;
-}
-
-.animation-delay-400 {
-  animation-delay: 0.4s;
-}
-
-
-/* src/index.css - اضافه کن به انتهای فایل */
 
 /* انیمیشن گرادیانت متحرک */
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* انیمیشن چرخش آهسته */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- کلاس‌های کمکی انیمیشن (Utility Classes) --- */
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
 }
 
 .animate-gradient {
@@ -84,40 +85,17 @@
   animation: gradient 1.5s ease infinite;
 }
 
-/* انیمیشن چرخش آهسته */
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .animate-spin-slow {
   animation: spin-slow 8s linear infinite;
 }
 
-/* انیمیشن fade in up */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* تاخیرهای انیمیشن */
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.4s ease-out forwards;
-}
-
-
-
- body {
-    direction: rtl;
-    font-family: 'IRANSans', system-ui, sans-serif;
-  }
-
-
+/* --- لایه کامپوننت‌های تیلوند --- */
 @layer components {
   .container-custom {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;

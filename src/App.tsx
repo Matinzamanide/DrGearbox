@@ -19,7 +19,6 @@ import ElectroMotor from "./pages/ElectroMotor/Electromotor";
 import Searchedproducts from "./pages/SearchedProducts/SearchedProducts";
 import Chini from "./pages/ElectroMotor/Chini/Chini";
 import Motogen from "./pages/ElectroMotor/Motogen/Motogen";
-import NMRVMorakab from "./pages/Halazooni/NMRVMorakab";
 import Tajhizat from "./pages/Tajhizat/page";
 import Stock from "./pages/Stock/Stock";
 import StockProducts from "./pages/StockProducts/StockProducts";
@@ -27,7 +26,6 @@ import AdminLogin from "./pages/admin/Login/Login";
 import AddAdmin from "./pages/admin/AddAdmin/AddAdmin";
 import ForgotPassword from "./pages/admin/ForgotPassword/ForgotPassword";
 import Dashboard from "./pages/admin/Dashboard/Dashboard";
-
 function App() {
   return (
     <ShoppingCartProvider>
@@ -58,7 +56,7 @@ function App() {
             <Route path="/دسته-بندی-محصولات/استوک" element={<Stock />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/گیربکس/گیربکس-حلزونی" element={<Halazooni />} />
-            <Route path="/گیربکس/حلزونی/:slug/:id" element={<NMRVMorakab />} />
+            {/* <Route path="/گیربکس/حلزونی/:slug/:id" element={<NMRVMorakab />} /> */}
             <Route path="/گیربکس" element={<Gearbox />} />
             <Route path="/الکتروموتور" element={<ElectroMotor />} />
             <Route path="/الکتروموتور/چینی" element={<Chini />} />

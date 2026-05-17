@@ -1,10 +1,9 @@
 // pages/admin/AddAdmin.tsx
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { 
   UserPlus, User, Lock, Mail, Shield, Eye, EyeOff, 
-  Save, X, AlertCircle, CheckCircle, Key, Briefcase,
-  Users, Trash2, Edit, Search,
+  Save, X, AlertCircle, CheckCircle, Briefcase,
+  Users, Trash2, Search,
   Phone
 } from "lucide-react";
 import axios from "axios";
@@ -21,7 +20,6 @@ interface AdminUser {
 }
 
 const AddAdmin = () => {
-  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<"add" | "list">("add");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);

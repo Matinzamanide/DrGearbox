@@ -87,6 +87,7 @@ const BestSellers = () => {
   const handleLinkClick = (e: React.MouseEvent, url: string) => {
     if (hasMoved) {
       e.preventDefault();
+      console.log(url)
     }
     // اگر حرکت نکرده بود، لینک کار می‌کند
   };

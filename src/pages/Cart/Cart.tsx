@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import { 
   X, Trash2, Plus, Minus, ShoppingBag, CreditCard, 
-  Truck, Tag, AlertCircle, Shield, Clock, 
-  ArrowLeft, TrendingUp, Percent, Sparkles
+  Truck, AlertCircle, Shield, Clock, Percent, Sparkles, CheckCircle
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
@@ -24,7 +23,6 @@ const CartDrawer: React.FC = () => {
   const [couponInput, setCouponInput] = useState("");
   const [couponError, setCouponError] = useState<string | null>(null);
   const [couponSuccess, setCouponSuccess] = useState(false);
-  const [isCouponLoading, setIsCouponLoading] = useState(false);
 
   const formatPrice = (price: number) => {
     return price.toLocaleString("fa-IR") + " تومان";
@@ -36,7 +34,6 @@ const CartDrawer: React.FC = () => {
       return;
     }
     
-    setIsCouponLoading(true);
     const success = await applyCoupon(couponInput);
     if (success) {
       setCouponSuccess(true);
@@ -46,7 +43,6 @@ const CartDrawer: React.FC = () => {
       setCouponError("کد تخفیف معتبر نیست");
     }
     setCouponInput("");
-    setIsCouponLoading(false);
   };
 
   const handleProductClick = (title: string) => {
@@ -110,9 +106,8 @@ const CartDrawer: React.FC = () => {
               <p className="text-gray-500 text-sm mb-6">محصولات مورد نظر خود را به سبد اضافه کنید</p>
               <button 
                 onClick={closeCart}
-                className="px-6 py-2.5 bg-gradient-to-r from-[#1c4793] to-[#113d64] text-white rounded-xl hover:shadow-lg transition-all duration-300 flex items-center gap-2"
+                className="px-6 py-2.5 bg-gradient-to-r from-[#1c4793] to-[#113d64] text-white rounded-xl hover:shadow-lg transition-all duration-300"
               >
-                <ArrowLeft className="w-4 h-4" />
                 ادامه خرید
               </button>
             </div>
@@ -218,7 +213,19 @@ const CartDrawer: React.FC = () => {
             <div className="p-5 border-b border-gray-100">
               <div className="relative">
                 <div className="flex gap-2">
-                 
+                  <input
+                    type="text"
+                    value={couponInput}
+                    onChange={(e) => setCouponInput(e.target.value)}
+                    placeholder="کد تخفیف دارید؟"
+                    className="flex-1 px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#1c4793] transition-colors"
+                  />
+                  <button
+                    onClick={handleApplyCoupon}
+                    className="px-5 py-2.5 bg-gray-800 text-white rounded-xl text-sm font-medium hover:bg-gray-900 transition-colors"
+                  >
+                    اعمال
+                  </button>
                 </div>
                 {couponError && (
                   <p className="text-xs text-red-500 mt-2 flex items-center gap-1">
@@ -228,7 +235,7 @@ const CartDrawer: React.FC = () => {
                 )}
                 {couponSuccess && (
                   <p className="text-xs text-green-500 mt-2 flex items-center gap-1 animate-pulse">
-                    <CheckCircle className="w-3 h-3" />
+                    <CheckCircle className="w-3.5 h-3.5" />
                     کد تخفیف با موفقیت اعمال شد
                   </p>
                 )}
@@ -310,7 +317,7 @@ const CartDrawer: React.FC = () => {
             </div>
             
             {/* ضمانت‌ها */}
-            <div className="p-5 pt-0 flex justify-center gap-6 text-xs text-gray-400 border-t border-gray-100 pt-4">
+            <div className="p-5 pt-0 flex justify-center gap-6 text-xs text-gray-400 border-t border-gray-100">
               <div className="flex items-center gap-1">
                 <Shield className="w-3.5 h-3.5" />
                 <span>گارانتی اصالت</span>
@@ -384,13 +391,6 @@ const CartDrawer: React.FC = () => {
 };
 
 export default CartDrawer;
-
-// اضافه کردن کامپوننت CheckCircle که در کد استفاده شده
-const CheckCircle = ({ className }: { className?: string }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-  </svg>
-);
 
 
 

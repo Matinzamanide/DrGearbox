@@ -14,8 +14,7 @@ import {
   ChevronRight,
   Sparkles,
   Flame,
-  ShoppingBag,
-  CheckCircle
+  ShoppingBag
 } from "lucide-react";
 
 const Tajhizat = () => {
